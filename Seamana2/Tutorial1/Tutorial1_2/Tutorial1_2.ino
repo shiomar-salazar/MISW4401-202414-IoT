@@ -23,6 +23,8 @@ void setup() {
 
  pinMode(LED, OUTPUT);
  digitalWrite(LED, LOW); //LED apagado
+ dht.begin(); // función begin
+
 
  // Connect to WiFi network
  Serial.println();

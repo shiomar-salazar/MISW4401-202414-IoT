@@ -88,6 +88,8 @@ void setup()
   WiFi.hostname(HOSTNAME);
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, pass);
+  dht.begin(); // función begin
+
   //Intenta conectarse con los valores de las constantes ssid y pass a la red Wifi
   //Si la conexión falla el node se dormirá hasta que lo resetee
   while (WiFi.status() != WL_CONNECTED)

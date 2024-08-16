@@ -10,9 +10,10 @@ int myflag=0;
 
 void setup()
 {
- Serial.begin(9600);
- pinMode(LED, OUTPUT);
- digitalWrite(LED, LOW); //LED comienza apagado
+  Serial.begin(9600);
+  pinMode(LED, OUTPUT);
+  digitalWrite(LED, LOW);
+  dht.begin(); // función begin
 }
 
 void loop()
