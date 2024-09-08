@@ -4,7 +4,7 @@ import ssl
 import paho.mqtt.client as mqtt
 
 # Cambie esta variable por la dirección IP pública de su broker MQTT
-HOST = "44.198.164.14"
+HOST = "3.235.128.51"
 PORT = 8082
 
 USER = "admin"  # Cambie esta variable por el usuario administrador de su broker MQTT
@@ -16,8 +16,9 @@ client.tls_set(ca_certs='ca.crt',
 
 def on_message(client_msg: mqtt.Client, userdata, message: mqtt.MQTTMessage):
     log_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(log_date, "Data received: \n", message._topic.decode(
-        "utf-8"), message.payload.decode("utf-8"))
+    # print(log_date, "Data received: \n", message._topic.decode(
+    #     "utf-8"), message.payload.decode("utf-8"))
+    print(log_date, "Data received: \n", message.payload.decode("utf-8"))
     pass
 
 

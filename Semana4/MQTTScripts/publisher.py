@@ -63,3 +63,5 @@ client.on_connect_fail = on_error
 client.on_disconnect = on_disconnect
 client.connect(args.host, args.port, 60)
 send_messages()
+
+#python publisher.py --host 44.198.164.14 --user user1 --passwd 123456 --topic mexico/jalisco/guadalajara/user1
