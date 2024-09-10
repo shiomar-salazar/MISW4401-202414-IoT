@@ -171,7 +171,7 @@ MQTT_PASSWORD_PUB = "admin2"
 
 # Tópico a suscribir. "+/+/+/+/out" se suscribe únicamente a los
 # tópicos con forma <país>/<estado>/<ciudad>/<usuario>/out.
-TOPIC = "Mexico/Queretaro/Zakia/"+MQTT_USER_PUB+"/out"
+TOPIC = "Colombia/Cundinamarca/Bogota/"+MQTT_USER_PUB+"/out"
 
 # Opción para habilitar la transmisión de mensajes segura
 MQTT_USE_TLS = False

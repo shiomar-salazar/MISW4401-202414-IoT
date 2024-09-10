@@ -118,7 +118,8 @@ void sendSensorData(float temperatura, float humedad) {
   data += "}";
   char payload[data.length()+1];
   data.toCharArray(payload,data.length()+1);
-  
+  Serial.println(MQTT_TOPIC_PUB);
+  Serial.println(payload);
   client.publish(MQTT_TOPIC_PUB, payload);
 }
 
