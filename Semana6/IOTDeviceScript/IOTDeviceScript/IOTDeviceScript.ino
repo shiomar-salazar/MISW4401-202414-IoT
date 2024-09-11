@@ -54,9 +54,9 @@ const char MQTT_PASS[] = "admin2"; // TODO Reemplace ContrasenaMQTT por la contr
 
 //Tópico al que se recibirán los datos
 // El tópico de publicación debe tener estructura: <país>/<estado>/<ciudad>/<usuario>/out
-const char MQTT_TOPIC_PUB[] = "Mexico/Queretaro/Zakia/" USER "/out"; //TODO Reemplace el valor por el tópico de publicación que le corresponde.
+const char MQTT_TOPIC_PUB[] = "colombia/cundinamarca/bogota/" USER "/out"; //TODO Reemplace el valor por el tópico de publicación que le corresponde.
 // El tópico de suscripción debe tener estructura: <país>/<estado>/<ciudad>/<usuario>/in
-const char MQTT_TOPIC_SUB[] = "Mexico/Queretaro/Zakia/" USER "/in"; //TODO Reemplace el valor por el tópico de suscripción que le corresponde.
+const char MQTT_TOPIC_SUB[] = "colombia/cundinamarca/bogota/" USER "/in"; //TODO Reemplace el valor por el tópico de suscripción que le corresponde.
 
 // Declaración de variables globales
 
